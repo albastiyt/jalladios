@@ -701,7 +701,7 @@ _G.PGHACKSState = _G.PGHACKSState or {
     PrevGraphicsState = {}
 }
 
-local limitTime = os.time({ year = 2026, month = 10, day = 20, hour = 23, min = 59, sec = 0 })
+local limitTime = os.time({ year = 2026, month = 10, day = 25, hour = 23, min = 59, sec = 0 })
 local currentTime = os.time(os.date("!*t"))
 local isExpired = false
 
