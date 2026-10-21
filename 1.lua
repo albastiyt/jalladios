@@ -7015,8 +7015,8 @@ local function MainLoop()
                     uTPPCam.FieldOfView = targetTPP
                 end
             else
-                if Valid(uTPPCam) and uTPPCam.FieldOfView ~= 90 then
-                    uTPPCam.FieldOfView = 90
+                if Valid(uTPPCam) and uTPPCam.FieldOfView ~= 80 then
+                    uTPPCam.FieldOfView = 80
                 end
             end
         end
@@ -7029,7 +7029,7 @@ local function MainLoop()
                     uVehCam.FieldOfView = targetVeh
                 end
 
-                if targetVeh > 90 then
+                if targetVeh > 80 then
                     if type(pc.FOV) == "function" then pc:FOV(targetVeh) end
                     if Valid(camMgr) then
                         camMgr.DefaultFOV = targetVeh
@@ -7037,8 +7037,8 @@ local function MainLoop()
                     end
                 end
             else
-                if Valid(uVehCam) and uVehCam.FieldOfView ~= 90 then
-                    uVehCam.FieldOfView = 90
+                if Valid(uVehCam) and uVehCam.FieldOfView ~= 80 then
+                    uVehCam.FieldOfView = 80
                 end
             end
         end
